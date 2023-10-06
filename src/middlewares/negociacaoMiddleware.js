@@ -13,8 +13,8 @@ const validateBody = (req, res, next) => {
         res.status(400).json({ message: 'Campo "valor_por_saca" é obrigatório' });
         return;
     }
-    if (body.quantidade_sacas === undefined || body.quantidade_sacas === '') {
-        res.status(400).json({ message: 'Campo "quantidade_sacas" é obrigatório' });
+    if (body.quantidade_saca === undefined || body.quantidade_saca === '') {
+        res.status(400).json({ message: 'Campo "quantidade_saca" é obrigatório' });
         return;
     }
     if (body.data_vencimento === undefined || body.data_vencimento === '') {
